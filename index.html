@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="javascripts/jquery-3.5.1.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(function() {
+      $('.menubar a').each(function() {
+        $(this).on('click', function(e) {
+          e.preventDefault();
+          var scrollTo = $(this).attr('href');
+          var whitespace = scrollTo == '#s1' ? 70 : 30;
+          $('html,body').animate({
+            scrollTop: $(scrollTo).offset().top - whitespace
+          }, 1000);
+        });
+      });
+    });
+    </script>
+  </head>
+  <body>
+
+        <nav class="menubar">
+          <a href="#s1">О труппе</a>
+          <a href="#s2">Сезоны</a>
+          <a href="#s3">Сцена</a>
+          <a href="#s4">Современность</a>
+        </nav>
+
+    <!-- <div class="menubar">
+      <a href="#s2">О труппе</a>
+      <a href="#s2">Сезоны</a>
+      <a href="">Сцена</a>
+      <a href="">Современность</a>
+    </div> -->
+
+    <style media="screen">
+
+      body {
+        width: 1280px;
+        margin: 0 auto;
+        background: white;
+        height: 5824px;
+        display: block;
+        position: relative;
+        overflow-y: scroll;
+      }
+      body::before {
+        /* content: ""; */
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        background: url('iMac - 4.jpg');
+        height: 100%;
+        display:block;
+        opacity: .2;
+      }
+      html {
+        background: #bbb;
+        position: relative;
+        height: 100%;
+      }
+      section {
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 136%;
+        letter-spacing: -0.035em;
+      }
+      section h1,
+      section p {
+        width: 471px;
+        margin: 0 auto;
+      }
+      section h1 {
+        position: absolute;
+        width: 699px;
+        height: 217px;
+        left: 666px;
+        top: 240px;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 66px;
+      }
+      section p {
+        position: absolute;
+        width: 479px;
+        height: 178px;
+        left: 666px;
+        top: 422px;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 136%;
+        letter-spacing: -0.035em;
+      }
+      section img {
+      position: absolute;
+      width: 465.04px;
+      height: 435.67px;
+      left: 118.96px;
+      top: 190px;
+      }
+      .two h1 {
+        position: absolute;
+        width: 584px;
+        height: 57px;
+        left: 165px;
+        top: 867px;
+        font-size: 48px;
+        line-height: 61px;
+        display: flex;
+        align-items: flex-end;
+      }
+      .two p {
+        position: absolute;
+        width: 501px;
+        height: 178px;
+        left: 165px;
+        top: 980px;
+        font-size: 18px;
+        line-height: 136%;
+        letter-spacing: -0.035em;
+      }
+      .two img {
+        position: absolute;
+        width: 506.02px;
+        height: 727.61px;
+        left: 676px;
+        top: 765px;
+      }
+      .three p {
+        position: absolute;
+        width: 453px;
+        height: 150px;
+        left: 165px;
+        top: 1493px;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 136%;
+        letter-spacing: -0.035em;
+      }
+      .three img {
+        position: absolute;
+        width: 1123px;
+        height: 173px;
+        left: 78px;
+        top: 1759px;
+      }
+      .three1 p {
+        position: absolute;
+        width: 158px;
+        height: 22px;
+        left: 86px;
+        top: 1949px;
+        font-size: 18px;
+        line-height: 136%;
+        letter-spacing: -0.035em;
+      }
+      .three2 p {
+        position: absolute;
+        width: 157px;
+        height: 22px;
+        left: 326px;
+        top: 1949px;
+        font-size: 18px;
+        line-height: 136%;
+        letter-spacing: -0.035em;
+      }
+      .three3 p {
+        position: absolute;
+        width: 121px;
+        height: 22px;
+        left: 583px;
+        top: 1949px;
+        font-size: 18px;
+        line-height: 136%;
+        letter-spacing: -0.035em;
+      }
+      .three4 p {
+        position: absolute;
+        width: 96px;
+        height: 22px;
+        left: 834px;
+        top: 1949px;
+        font-size: 18px;
+        line-height: 136%;
+        letter-spacing: -0.035em;
+      }
+      .three5 p {
+        position: absolute;
+        width: 146px;
+        height: 22px;
+        left: 1044px;
+        top: 1949px;
+        font-size: 18px;
+        line-height: 136%;
+        letter-spacing: -0.035em;
+      }
+      .three6 img {
+      position: absolute;
+      width: 670px;
+      height: 220px;
+      left: 0px;
+      top: 1440px;
+      }
+      .four h1 {
+        position: absolute;
+        width: 187px;
+        height: 57px;
+        left: 165px;
+        top: 2238px;
+
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 61px;
+        display: flex;
+        align-items: flex-end;
+      }
+      .four h2 {
+        position: absolute;
+        width: 580px;
+        height: 320px;
+        left: 165px;
+        top: 2328px;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 136%;
+        letter-spacing: -0.035em;
+      }
+      .four p {
+        position: absolute;
+        width: 580px;
+        height: 320px;
+        left: 165px;
+        top: 2373px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 136%;
+        letter-spacing: -0.035em;
+      }
+      .four img {
+        position: absolute;
+        width: 1270px;
+        height: 962.43px;
+        left: 0px;
+        top: 2119.06px;
+      }
+      .vector img{
+        position: absolute;
+        width: 1115px;
+        height: 0px;
+        left: 165px;
+        top: 2160px;
+
+        border: 1px solid #000000;
+      }
+      .five img{
+        position: absolute;
+        width: 1064px;
+        height: 588px;
+        left: 108px;
+        top: 2958px;
+      }
+      .six h1{
+        position: absolute;
+        width: 187px;
+        height: 57px;
+        left: 157px;
+        top: 3832px;
+        font-size: 48px;
+        line-height: 61px;
+        display: flex;
+
+      }
+      .six p{
+        position: absolute;
+        width: 498px;
+        height: 69px;
+        left: 157px;
+        top: 3924px;
+        font-size: 18px;
+        line-height: 23px;
+      }
+      .six img{
+        position: absolute;
+        width: 489px;
+        height: 588px;
+        left: 682px;
+        top: 3648px;
+      }
+      .seven h1 {
+        position: absolute;
+        width: 569px;
+        height: 124px;
+        left: 640px;
+        top: 4481px;
+        font-size: 48px;
+        line-height: 51px;
+      }
+      .seven p {
+        position: absolute;
+        width: 560px;
+        height: 184px;
+        left: 640px;
+        top: 4572px;
+        font-size: 18px;
+        line-height: 23px;
+      }
+      .seven img {
+        position: absolute;
+        width: 778.27px;
+        height: 751.01px;
+        left: -15px;
+        top: 4287px;
+      }
+      .eight p{
+        position: absolute;
+        width: 482px;
+        height: 164px;
+        left: 157px;
+        top: 5241px;
+        font-size: 18px;
+        line-height: 23px;
+      }
+      .eight img{
+        position: absolute;
+        width: 401px;
+        height: 521px;
+        left: 770px;
+        top: 5064px;
+      }
+      .eight1 p{
+        position: absolute;
+        width: 448px;
+        height: 164px;
+        left: 157px;
+        top: 5339px;
+        font-size: 18px;
+        line-height: 23px;
+      }
+      .vector2 img{
+        position: absolute;
+        width: 1171px;
+        height: 0px;
+        left: 0px;
+        top: 5668.75px;
+        border: 1px solid #000000;
+      }
+      .nine p{
+        position: absolute;
+        width: 165px;
+        height: 23px;
+        left: 157px;
+        top: 5733px;
+        font-size: 18px;
+        line-height: 23px;
+      }
+      .nine1 p{
+        position: absolute;
+        width: 616px;
+        height: 23px;
+        left: 600px;
+        top: 5733px;
+        font-size: 18px;
+        line-height: 23px;
+      }
+
+    </style>
+
+    <section>
+      <div>
+        <h1>Wiener <br> Staatsballett</h1>
+        <p>Венский государственный балет считается одной из ведущих балетных трупп мира. Его представления можно увидеть как на сцене Государственной оперы,<br>так и в Народной опере. К кульминационным пунктам сезона 2020/21 относятся работы Джорджа&nbsp;Баланчина, Джерома Роббинса, Ханса Манена и Мартина Шлепфера.</p>
+      </div>
+      <div>
+        <img src="images/Group 7.png" alt="">
+      </div>
+    </section>
+
+    <section class="two">
+      <div>
+        <h1>О труппе</h1>
+        <p>С сентября 2010 года балетную труппу Венской государственной оперы возглавляет Манюэль Легри – один из самых заметных деятелей мирового балета, экс-премьер Парижской оперы, выступавший в качестве приглашенной звезды на многих сценах мира, в том числе и в Вене. Теперь он руководит хореографической труппой, обладающей удивительно богатыми традициями.</p>
+      </div>
+      <div>
+        <img  id="s1" src="images/Group 6.png" alt="">
+      </div>
+    </section>
+
+    <section class="three">
+      <div>
+        <p>Среди хореографов и танцоров, работавших в Вене в разные века, есть те, чьи имена стали легендарными:</p>
+      </div>
+      <div>
+        <img src="images/Group 8.png" alt="">
+      </div>
+    </section>
+    <section class="three1">
+      <div>
+        <p>Доминико Вентура</p>
+      </div>
+    </section>
+    <section class="three2">
+      <div>
+        <p>Сальваторе Вигано</p>
+      </div>
+    </section>
+    <section class="three3">
+      <div>
+        <p>Мари Тальони</p>
+      </div>
+    </section>
+    <section class="three4">
+      <div>
+        <p>Луи Дюпор</p>
+      </div>
+    </section>
+    <section class="three5">
+      <div>
+        <p>Хенрик Крёллер</p>
+      </div>
+    </section>
+    <section class="three6">
+      <div>
+        <img src="images/Group 9.png" alt="">
+      </div>
+    </section>
+
+    <section class="four">
+      <div>
+        <img src="images/Group 18.png" alt="">
+      </div>
+      <div>
+        <h1>Сезоны</h1>
+        <h2>Сезон 2019–2020 гг.</h2>
+        <p>В своем десятом и последнем сезоне Венского государственного балета Мануэль Легрис представляет три премьеры в Венской государственной опере: «Драгоценности» Джорджа Баланчина, вечер тройного счета c «Движениями Андраша Лукача к Стрависскому», мировую премьеру Понта Лидберга «Между собаками и волками» и «Начо». «Белая тьма» Дуато и Нуреев Гала 2020. В Венской народной опере будут представлены еще две премьеры: «Пиаф» Мауро Бигонцетти и тройная афиша «Аппассионато - Бах и Вивальди» с «Иль Прете Россо» Бориса Небилы, «Обезьяний разум» Эно Печи и «Не другое сейчас» Мартина Винтера.</p>
+      </div>
+    </section>
+
+    <section class="vector">
+      <div>
+        <img id="s2"src="images/Vector 12 (1).png" alt="">
+      </div>
+    </section>
+
+    <section class="five">
+      <div>
+        <img src="images/Group 19.png" alt="">
+      </div>
+    </section>
+
+    <section class="six">
+      <div>
+        <h1>Сцена</h1>
+        <p>Виртуозную труппу Венского государственного балета можно увидеть как на сцене Государственной оперы,<br> так и в Народной опере.</p>
+      </div>
+      <div>
+        <img  id="s3" src="images/Group 14.png" alt="">
+      </div>
+    </section>
+
+    <section class="seven">
+      <div>
+        <h1>Современность</h1>
+        <p>Сегодня Венский балет славится своей современной хореографией, хотя многие годы труппа считалась оплотом академизма. С момента вступления Манюэля Легри<br>в должность руководителя, Wiener Staatsballett практически полностью обновил репертуар и стал активно сотрудничать<br> с самыми актуальными хореографами наших дней,<br> превратив ее из поборника классического академизма в законодателя хореографической моды.</p>
+      </div>
+      <div>
+        <img  id="s4" src="images/Group 20.png" alt="">
+      </div>
+    </section>
+
+    <section class="eight">
+      <div>
+        <p>Австрия, Вена, Венская Государственная опера (Wiener&nbsp;Staatsoper), Opernring 2</p>
+      </div>
+      <div>
+        <img src="images/Group 17.png" alt="">
+      </div>
+    </section>
+    <section class="eight1">
+      <div>
+        <p>Австрия, Вена, Народная опера (Volksoper), Währinger&nbsp;Straße 78</p>
+      </div>
+    </section>
+
+    <section class="vector2">
+      <div>
+        <img src="images/Vector 13 (1).png" alt="">
+      </div>
+    </section>
+
+    <section class="nine">
+      <div>
+        <p>Злыднева Мария</p>
+      </div>
+    </section>
+    <section class="nine1">
+      <div>
+        <p>Источник: https://www.wiener-staatsoper.at/en/wiener-staatsballett/</p>
+      </div>
+    </section>
+  </body>
+</html>
